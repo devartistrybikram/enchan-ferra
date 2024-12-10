@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+</head>
+<body class="">
+    <header class="header text-light">
+        <nav class="navbar navbar-expand-lg border-body fixed-top p-4" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./elements/logo.webp" alt="Logo" class="logo d-inline-block align-text-top">
+                </a>
+                <div class="d-lg-none text-center p-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </div>
+                <div class="navbar-nav ms-auto d-none d-lg-flex">
+                    <a class="nav-link px-lg-3 active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link px-lg-3" href="#">Texas</a>
+                    <a class="nav-link px-lg-3" href="#">Wyoming</a>
+                    <a class="nav-link px-lg-3" href="#">Missuri</a>
+                    <a class="nav-link px-lg-3" href="#">Arkansan</a>
+                    <a class="nav-link px-lg-3" href="#">Contact Us</a>
+                    <a class="nav-link px-lg-5 mx-3 button rounded" href="#">Donate</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header" style="box-shadow: 0 10px 10px -10px rgba(170, 180, 150, 0.25);">
+            <div class="offcanvas-title" id="offcanvasExampleLabel">
+                <img src="./logo.png" alt="">
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="d-flex flex-column p-0" style="list-style: none;">
+                <li class="p-2 mb-3"><a href="#" class="active">Home</a></li>
+                <li class="p-2 mb-3"><a href="#">About Us</a></li>
+                <li class="p-2 mb-3"><a href="#">Gallery</a></li>
+                <li class="p-2 mb-3"><a href="#">Testimonials</a></li>
+                <li class="p-2 mb-3"><a href="#">Blogs</a></li>
+                <li class="p-2 mb-3"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="py-5 bg-dark text-light hero">
+        <div class="container">
+            <div class="row align-items-start mt-5">
+                <div class="col-12 col-lg-6 p-5 mt-5">
+                    <h1 class="fw-bold position-relative">Lorem ipsum<br/>Dolor sit amet</h1>
+                    <p>Consectetur adipiscing elit Nulla at congue augue, ac lobortis velit.
+                        Nec lacus placerat, varius urna nec, viverra leo.</p>
+                        <form action="" class="d-flex gap-2 p-2 bg-light rounded">
+                            <select name="" id="" class="p-1 rounded border border-2">
+                                <option value="" selected>Date</option>
+                            </select>
+                            <select name="" id="" class="p-1 rounded border border-2">
+                                <option value="" selected>Month</option>
+                            </select>
+                            <button type="button" class="p-1 rounded">Book Now</button>
+                        </form>
+                </div>
+                <div class="col-12 col-lg-6 text-end pt-5">
+                    <img src="./images/banner.jpg" alt="" class="position-relative hero-img shadow-sm mt-3">
+                    <img src="./elements/sunflower.webp" alt="" class="position-absolute flower">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 slider bg-flower">
+        <div class="container mb-5">
+            <div class="row align-items-center">
+                <div class="col-10">
+                    <h1 class="my-5 fw-bold title">Lorem <span class="position-relative">Ipsum</span></h1>
+                </div>
+                <div class="col-2 d-flex gap-2 justify-content-end">
+                    <button type="button" class="border fs-4"><i class="bi bi-caret-left"></i></button>
+                    <button type="button" class="border fs-4"><i class="bi bi-caret-right"></i></button>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme home-slider">
+                <div class="item position-relative">
+                    <img src="./images/home_slider_1.jpg" alt="">
+                    <div class="texts p-3 position-absolute text-light text-start align-items-end">
+                        <p>Lorem ipsum consectetur adipis cing elit. ac lobortis velit.</p>
+                    </div>
+                </div>
+                <div class="item position-relative">
+                    <img src="./images/home_slider_2.jpg" alt="">
+                    <div class="texts p-3 position-absolute text-light text-start align-items-end">
+                        <p>Lorem ipsum consectetur adipis cing elit. ac lobortis velit.</p>
+                    </div>
+                </div>
+                <div class="item position-relative">
+                    <img src="./images/home_slider_3.jpg" alt="">
+                    <div class="texts p-3 position-absolute text-light text-start align-items-end">
+                        <p>Lorem ipsum consectetur adipis cing elit. ac lobortis velit.</p>
+                    </div>
+                </div>
+                <div class="item position-relative">
+                    <img src="./images/home_slider_4.jpg" alt="">
+                    <div class="texts p-3 position-absolute text-light text-start align-items-end">
+                        <p>Lorem ipsum consectetur adipis cing elit. ac lobortis velit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 places bg-body-tertiary">
+        <div class="container mb-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <img src="./images/texas.jpg" alt="" class="border-pill">
+                </div>
+                <div class="col-12 col-lg-6 text-start">
+                    <h1 class="title sunflower fw-bold"><span class="position-relative">Texus</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum quas alias nisi. Ullam nisi, sit omnis ut vel dignissimos ipsa adipisci.</p>
+                    <div class="row mb-3 border rounded align-items-center p-2 shadow">
+                        <div class="col-3 text-center">
+                            <img src="./elements/swim_icon.png" alt="">
+                        </div>
+                        <div class="col-9">
+                            <strong>lorem</strong><br/>
+                            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit necessitatibus dignissimos quae harum.</p>
+                            <a href="#" class="fw-bold readbtn">Read Now</a>
+                        </div>
+                    </div>
+                    <div class="row mb-4 border rounded align-items-center p-2 shadow">
+                        <div class="col-3 text-center">
+                            <img src="./elements/camp_icon.png" alt="">
+                        </div>
+                        <div class="col-9">
+                            <strong>lorem</strong><br/>
+                            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit necessitatibus dignissimos quae harum.</p>
+                            <a href="#" class="fw-bold readbtn">Read Now</a>
+                        </div>
+                    </div>
+                    <a href="#" class="button px-5 py-2 rounded">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 places bg-flower">
+        <div class="container mb-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 text-start">
+                    <h1 class="title sunflower fw-bold"><span class="position-relative">Wyoming</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum quas alias nisi. Ullam nisi, sit omnis ut vel dignissimos ipsa adipisci.</p>
+                    <div class="row mb-3 border rounded align-items-center p-2 shadow">
+                        <div class="col-3 text-center">
+                            <img src="./elements/swim_icon.png" alt="">
+                        </div>
+                        <div class="col-9">
+                            <strong>lorem</strong><br/>
+                            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit necessitatibus dignissimos quae harum.</p>
+                            <a href="#" class="fw-bold readbtn">Read Now</a>
+                        </div>
+                    </div>
+                    <div class="row mb-4 border rounded align-items-center p-2 shadow">
+                        <div class="col-3 text-center">
+                            <img src="./elements/camp_icon.png" alt="">
+                        </div>
+                        <div class="col-9">
+                            <strong>lorem</strong><br/>
+                            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit necessitatibus dignissimos quae harum.</p>
+                            <a href="#" class="fw-bold readbtn">Read Now</a>
+                        </div>
+                    </div>
+                    <a href="#" class="button px-5 py-2 rounded">View More</a>
+                </div>
+                <div class="col-12 col-lg-6 text-end">
+                    <img src="./images/wyoming.jpg" alt="" class="border-pill">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 places bg-body-tertiary">
+        <div class="container mb-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <img src="./images/mussorie.jpg" alt="" class="border-pill">
+                </div>
+                <div class="col-12 col-lg-6 text-start">
+                    <h1 class="title sunflower fw-bold"><span class="position-relative">Mussorie</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum quas alias nisi. Ullam nisi, sit omnis ut vel dignissimos ipsa adipisci.</p>
+                    <div class="row mb-3 border rounded align-items-center p-2 shadow">
+                        <div class="col-3 text-center">
+                            <img src="./elements/swim_icon.png" alt="">
+                        </div>
+                        <div class="col-9">
+                            <strong>lorem</strong><br/>
+                            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit necessitatibus dignissimos quae harum.</p>
+                            <a href="#" class="fw-bold readbtn">Read Now</a>
+                        </div>
+                    </div>
+                    <div class="row mb-4 border rounded align-items-center p-2 shadow">
+                        <div class="col-3 text-center">
+                            <img src="./elements/camp_icon.png" alt="">
+                        </div>
+                        <div class="col-9">
+                            <strong>lorem</strong><br/>
+                            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit necessitatibus dignissimos quae harum.</p>
+                            <a href="#" class="fw-bold readbtn">Read Now</a>
+                        </div>
+                    </div>
+                    <a href="#" class="button px-5 py-2 rounded">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 places bg-flower">
+        <div class="container mb-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 text-start">
+                    <h1 class="title sunflower fw-bold"><span class="position-relative">Arkansas</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum quas alias nisi. Ullam nisi, sit omnis ut vel dignissimos ipsa adipisci.</p>
+                    <div class="row mb-3 border rounded align-items-center p-2 shadow">
+                        <div class="col-3 text-center">
+                            <img src="./elements/swim_icon.png" alt="">
+                        </div>
+                        <div class="col-9">
+                            <strong>lorem</strong><br/>
+                            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit necessitatibus dignissimos quae harum.</p>
+                            <a href="#" class="fw-bold readbtn">Read Now</a>
+                        </div>
+                    </div>
+                    <div class="row mb-4 border rounded align-items-center p-2 shadow">
+                        <div class="col-3 text-center">
+                            <img src="./elements/camp_icon.png" alt="">
+                        </div>
+                        <div class="col-9">
+                            <strong>lorem</strong><br/>
+                            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit necessitatibus dignissimos quae harum.</p>
+                            <a href="#" class="fw-bold readbtn">Read Now</a>
+                        </div>
+                    </div>
+                    <a href="#" class="button px-5 py-2 rounded">View More</a>
+                </div>
+                <div class="col-12 col-lg-6 text-end">
+                    <img src="./images/arkansan.jpg" alt="" class="border-pill">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-5 play-list">
+        <div class="container my-5">
+            <div class="row align-items-end">
+                <div class="col-12 col-lg-4">
+                    <img src="./images/audio_pic.png" alt="" class="mb-3">
+                </div>
+                <div class="col-12 col-lg-8 px-lg-4">
+                    <h1 class="title sunflower fw-bold lh-1">Lorem ipsum dolor<br/>sit amet <img src="./elements//sunflower.webp" alt="" style="max-width: 65px;"></h1>
+                    <p class="pe-5 w-75">Nulla at congue augue, ac lobortis velit. Vivamus dolor risus, porta id quis,
+                        condimentum vitae lectus. Sed nec lacus placerat, varius urna.</p>
+                    <div class="row">
+                        <div class="col-10">
+                            <strong>Choose Playlist</strong>
+                        </div>
+                        <div class="col-2 position-relative">
+                            <button type="button" class="btn fs-3 rounded-circle"><i class="bi bi-play-fill"></i></button>
+                        </div>
+                    </div>
+                    <div class="owl-carousel owl-theme playlist">
+                        <div class="item p-4">
+                            <div class="">
+                                <img src="./images/song_one.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item p-4">
+                            <div class="">
+                                <img src="./images/song_two.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item p-4">
+                            <div class="">
+                                <img src="./images/song_three.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 banner">
+        <div class="container text-center text-light px-5 py-3">
+            <h1 class="title fw-bold">Lorem ipsum dolor sit amet,</h1>
+            <p class="fs-5">consectetur adipiscing elit. Nulla at congue augue, ac lobortis velit. Vivamus dolor risus,
+                porta id varius quis, condimentum vitae lectus.</p>
+            <button type="button" class="btn bg-light px-5 fw-medium">Donate</button>
+        </div>
+    </section>
+
+    <section class="lorem py-5">
+        <div class="container py-5 my-3">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-8">
+                    <p class="fs-2 fw-medium w-100 pe-lg-5 position-relative text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at congue augue, ac lobortis velit.
+                        <img src="./elements//sunflower.webp" alt="">
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4 ">
+                    <div class="card p-3 border-0 rounded shadow">
+                        <img src="./elements/sanctums_logo.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 small-cards">
+                <div class="col-6 col-lg-3">
+                    <div class="card border-0 p-3 shadow bg-light">
+                        <img src="./elements/sanctums_logo_texus.webp" alt="" class="mx-auto">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card border-0 p-3 shadow bg-light">
+                        <img src="./elements/sanctums_logo_wyoming.webp" alt="" class="mx-auto">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card border-0 p-3 shadow bg-light">
+                        <img src="./elements/sanctums_logo_missourie.webp" alt="" class="mx-auto">
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="card border-0 p-3 shadow bg-light">
+                        <img src="./elements/sanctums_logo_arkansas.webp" alt="" class="mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials py-5 bg-body-tertiary">
+        <div class="container mt-5">
+            <h1 class="title sunflower fw-bold text-center"><span class="position-relative text-dark">Testimonials</span></h1>
+            <div class="owl-carousel owl-theme testimonials-slider mt-3">
+                <div class="item py-4 px-2">
+                    <div class="card border-0 shadow p-3 text-center">
+                        <img src="./images/testimonial_image_one.jpg" alt="" class="rounded-circle mx-auto">
+                        <strong>Lorem ipsum</strong>
+                        <span class="fw-bold fs-5">Dolor sit amet</span>
+                        <p class="text-start p-2">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla at congue augue, ac lobortis velit. Vivamus dolor risus, porta id varius quis.</p>
+                    </div>
+                </div>
+                <div class="item py-4 px-2">
+                    <div class="card border-0 shadow p-3 text-center">
+                        <img src="./images/testimonial_image_two.jpg" alt="" class="rounded-circle mx-auto">
+                        <strong>Lorem ipsum</strong>
+                        <span class="fw-bold fs-5">Dolor sit amet</span>
+                        <p class="text-start p-2">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla at congue augue, ac lobortis velit. Vivamus dolor risus, porta id varius quis.</p>
+                    </div>
+                </div>
+                <div class="item py-4 px-2">
+                    <div class="card border-0 shadow p-3 text-center">
+                        <img src="./images/testimonial_image_three.jpg" alt="" class="rounded-circle mx-auto">
+                        <strong>Lorem ipsum</strong>
+                        <span class="fw-bold fs-5">Dolor sit amet</span>
+                        <p class="text-start p-2">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla at congue augue, ac lobortis velit. Vivamus dolor risus, porta id varius quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-flower contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <h1 class="title sunflower fw-bold mb-4"><span class="position-relative text-dark">Contact Us</span></h1>
+                    <div class="d-flex flex-column gap-2">
+                        <input type="text" name="" id="" class="border shadow rounded px-3 py-2" placeholder="Name">
+                        <input type="email" name="" id="" class="border shadow rounded px-3 py-2" placeholder="Email">
+                        <input type="tel" name="" id="" class="border shadow rounded px-3 py-2" placeholder="Phone No.">
+                        <textarea name="" id="" rows="4" class="border shadow rounded px-3 py-2" placeholder="Message"></textarea>
+                        <button type="button" class="btn w-25 py-2 mt-2">View More</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-end">
+                    <img src="./images/contact_image.jpg" alt="" class="border-pill">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Footer -->
+    <footer class="py-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4 p-5">
+                    <img src="./elements/sanctums_logo.webp" alt="" style="max-width: 200px;">
+                </div>
+                <div class="col-12 col-lg-8 p-0">
+                    <div class="d-flex flex-wrap gap-5 justify-content-end">
+                        <a href="#">Home</a>
+                        <a href="#">Texus</a>
+                        <a href="#">Wyoming</a>
+                        <a href="#">Missuri</a>
+                        <a href="#">Arkansan</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 justify-content-end">
+                        <p class="ms-2"><span>Address: </span><a href="#">&nbsp;Location</a></p>
+                        <p class="ms-2"><span>Phone no: </span><a href="#">&nbsp;Location</a></p>
+                        <p class="ms-2"><span>Email: </span><a href="#">&nbsp;Location</a></p>
+                    </div>
+                    <div class="d-flex gap-3 justify-content-end">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-light">Copyright © 2024 EnchanTerra Sanctums. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
